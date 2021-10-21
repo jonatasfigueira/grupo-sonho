@@ -1,0 +1,71 @@
+/* The version of Bourbon used in this Pen was 4.* */
+@import "bourbon";
+ 
+#google-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+//    background-color: $background;
+
+    @include d(m) {
+    	height: 300px;
+    }
+
+    @include d(l) {
+    	height: 600px;
+    }
+}
+
+#cd-google-map {
+//	position: relative;
+
+	address {
+//		position: absolute;
+//		width: 100%;
+//		bottom: 0;
+//		left: 0;
+//		padding: 1em 1em;
+		background-color: rgba($blue2, .9);
+		color: $white;
+        @include type-2(14);
+        text-align: center;
+
+		@include d(m) {
+//			@include font-size(15px);
+			text-align: center;
+		}
+	}
+}
+
+#cd-zoom-in, #cd-zoom-out {
+	height: 32px;
+	width: 32px;
+	cursor: pointer;
+	margin-left: 10px;
+	background-color: rgba($blue2, .9);
+	background-repeat: no-repeat;
+	background-size: 32px 64px;
+	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-controller.svg');
+
+	.no-touch &:hover {
+		background-color: rgba($blue, 1);
+	}
+
+	@include d(m) {
+		margin-left: 50px;
+	}
+}
+
+#cd-zoom-in {
+	background-position: 50% 0;
+	margin-top: 10px;
+	margin-bottom: 1px;
+
+	@include d(M) {
+		margin-top: 50px;
+	}
+}
+
+#cd-zoom-out {
+	background-position: 50% -32px;
+}

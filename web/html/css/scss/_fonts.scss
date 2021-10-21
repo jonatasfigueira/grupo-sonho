@@ -1,0 +1,65 @@
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Pacifico|Quicksand');
+
+
+@font-face {
+    font-family: 'nexa-bold-webfont';
+    src: url('font/nexa-bold-webfont.eot');
+    src: url('font/nexa-bold-webfont.eot') format('embedded-opentype'),
+         url('font/nexa-bold-webfont.woff') format('woff'),
+         url('font/nexa-bold-webfont.ttf') format('truetype'),
+         url('font/nexa-bold-webfont.svg#nexa-bold-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nexa-light-webfont';
+    src: url('font/nexa-light-webfont.eot');
+    src: url('font/nexa-light-webfont.eot') format('embedded-opentype'),
+         url('font/nexa-light-webfont.woff') format('woff'),
+         url('font/nexa-light-webfont.ttf') format('truetype'),
+         url('font/nexa-light-webfont.svg#nexa-light-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url('font/CenturyGothic.eot');
+    src: url('font/CenturyGothic.eot') format('embedded-opentype'),
+         url('font/CenturyGothic.woff') format('woff'),
+         url('font/CenturyGothic.ttf') format('truetype'),
+         url('font/CenturyGothic.svg#CenturyGothic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'centuryGothicBold';
+    src: url('font/centuryGothicBold.eot');
+    src: url('font/centuryGothicBold.eot') format('embedded-opentype'),
+         url('font/centuryGothicBold.woff') format('woff'),
+         url('font/centuryGothicBold.ttf') format('truetype'),
+         url('font/centuryGothicBold.svg#centuryGothicBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'miss_issippi_demoregular';
+    src: url('font/miss_issippi_demo-webfont.woff2') format('woff2'),
+         url('font/miss_issippi_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'xiomararegular';
+    src: url('font/xiomara-script_0-webfont.woff2') format('woff2'),
+         url('font/xiomara-script_0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

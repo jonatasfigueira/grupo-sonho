@@ -1,0 +1,202 @@
+.video-colecao{
+
+}
+.tag-colecao{
+    margin-bottom: 50px;
+    
+    @include d(s){
+        margin-bottom: 10px;
+    }
+}
+.colecao-container{
+    
+    .img-content{
+        img{
+            height: 580px;
+            width: auto;
+            padding-left: 30px;
+            
+            @include d(m){ 
+                height: 420px;
+                padding-left: 0; 
+                margin-top: 200px;
+            }            
+            @include d(s){ 
+                height: auto;
+                padding-left: 0; 
+                margin-top: -160px;
+            }
+        }
+    }
+    .text-content{
+        padding-top: 220px;
+        
+        //media query
+        @include d(s){
+            padding-top: 0px; 
+        }
+        //media query
+        h1{
+            @include type-2(44);
+            text-transform: uppercase;
+            color: $violet1;
+            strong{
+                @include type-1(22);
+            }
+            
+            //media query
+            @include d(s){
+                text-align: center;
+            }
+        }
+        p{
+            //media query
+            @include d(l){
+                padding-top: 30px;
+                @include type-1(20);
+                color: $violet1;
+                line-height: 1.25em;
+            }
+            @include d(m){
+                padding-top: 30px;
+                @include type-1(18);
+                color: $violet1;
+                line-height: 1.25em;
+                text-align: left;
+            }            
+            
+            @include d(s){
+                text-align: center;
+                @include type-1(18);
+                color: $violet1;
+                line-height: 1.20em;
+                padding-bottom: 10px;
+            }
+            //media query
+        }
+        .small{
+            @include d(l){
+                @include type-2(16);
+                color: $violet1;
+                line-height: 1.50em;
+            }
+            @include d(m){
+                @include type-2(16);
+                color: $violet1;
+                line-height: 1.50em;
+            }
+            @include d(s){
+                @include type-2(16);
+                color: $violet1;
+                line-height: 1.20em;
+            }
+            &::before{
+                @include lineYellow;
+                background: $yellow;
+                
+                //media query
+                @include d(l){ 
+                    margin-top:20px; 
+                    margin-bottom:20px; 
+                }
+                @include d(m){ 
+                    margin-top:20px; 
+                    margin-bottom:20px; 
+                }                
+                
+                @include d(s){
+                    margin: 0 auto;
+                    margin-bottom:10px;
+                    text-align: center; 
+                }
+                //media query
+            }
+            
+            //media query
+            @include d(s){
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            //media query
+        }
+    }
+}
+.wrapper-video {
+    max-width: 500px;
+    margin: 0 auto;      
+    z-index: 1;
+    position: relative;
+    margin-bottom: -186px;
+    
+    //media query
+    @include d(s){
+        margin-bottom: -150px;
+    }
+    //media query
+}
+video {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;    
+}
+
+// .youtube {
+//     background-color: #000;
+//     margin-bottom: 30px;
+//     position: relative;
+//     padding-top: 56.25%;
+//     overflow: hidden;
+//     cursor: pointer;
+//   -webkit-border-radius: 13px;
+//   -moz-border-radius: 13px;
+//   border-radius: 13px;    
+// }
+// .youtube img {
+//     width: 100%;
+//     top: -16.82%;
+//     left: 0;
+//     opacity: 0.7;
+// }
+// .youtube .play-button {
+//     width: 90px;
+//     height: 60px;
+//     background-color: #333;
+//     box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+//     z-index: 1;
+//     opacity: 0.8;
+//     border-radius: 6px;
+// }
+// .youtube .play-button:before {
+//     content: "";
+//     border-style: solid;
+//     border-width: 15px 0 15px 26.0px;
+//     border-color: transparent transparent transparent #fff;
+// }
+// .youtube img,
+// .youtube .play-button {
+//     cursor: pointer;
+// }
+// .youtube img,
+// .youtube iframe,
+// .youtube .play-button,
+// .youtube .play-button:before {
+//     position: absolute;
+// }
+// .youtube .play-button,
+// .youtube .play-button:before {
+//     top: 50%;
+//     left: 50%;
+//     transform: translate3d( -50%, -50%, 0 );
+// }
+// .youtube iframe {
+//     height: 100%;
+//     width: 100%;
+//     top: 0;
+//     left: 0;
+// }

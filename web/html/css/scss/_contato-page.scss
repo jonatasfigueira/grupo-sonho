@@ -1,0 +1,151 @@
+.contato-page{
+    margin-top: 150px;
+    margin-bottom: 60px;
+    
+    @include d(m){
+        margin-top: 120px;
+        margin-bottom: 20px;
+    }
+    @include d(s){
+        margin-top: 110px;
+    }
+    .contato-form{
+        @include d(s){
+            text-align: center
+        } 
+        h1{
+            color:$violet1;
+            @include type-3(32);
+
+            //media query
+            @include d(m){
+                @include type-3(24);
+            } 
+            //media query
+            strong{
+                @include type-4(20);
+            }
+            &::after{
+                @include lineViolet2;
+                background: $yellow;
+                 //media query
+                @include d(s){
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }   
+                 //media query                
+            }            
+        }          
+        form{
+            //media query
+            @include d(s){
+                text-align: center;
+            }
+            //media query
+            .form-margin{
+                margin-top: 40px;
+            }
+            margin-bottom: 50px;
+            min-height:400px;
+            .logista-ident{
+                margin-bottom: 20px;
+            }   
+
+            h4{
+                @include type-3(16);
+                color: $violet1; 
+                strong{ 
+                    @include type-1(16);
+                } 
+            }
+        input[type=submit]{
+            margin: 15px 0;
+            @include gradientButton1;
+            @include pinkButton;
+            @include rot135;
+        }            
+        input[type=text]{
+            color: $orange; 
+            @include input-gray;
+            @include placeholder-orange;
+        }
+        
+        input[type=tel]{
+            color: $orange; 
+            @include input-gray;
+            @include placeholder-orange;
+        }   
+        input[type=email]{
+            color: $orange; 
+            @include input-gray;
+            @include placeholder-orange;
+        }
+            .contato-check{
+                h4{
+                    display: inline;
+                    @include type-3(16);
+                    color: $violet1; 
+                    strong{ 
+                        @include type-1(16);
+                    } 
+                }
+            p{
+                display: inline;
+            }
+            span{
+                display: inline;
+                @include type-3(16);
+                color: $violet1; 
+                strong{ 
+                    @include type-1(16);
+                } 
+            }                
+                input[type=checkbox]{
+                    display: inline;
+                    @include type-3(16); 
+                    span{
+                       color: $violet1; 
+                    }
+                }            
+            }
+            submit {float: none;}
+            
+            //Select 
+            select::-ms-expand {
+            display: none;
+            }
+            select { 
+                //contact form - select
+                @include input-item;
+                @include input-gray;
+                color: $orange;            
+                background: url('img/btn-select.png') no-repeat $gray2;  /* Imagem de fundo (Seta) */
+                background-position: 250px center;  /*Posição da imagem do background*/
+                width: 290px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+                height:42px; /* altura do select, importante para que tenha a mesma altura em todo os navegadores */
+                -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+                -moz-appearance: none; /* Remove estilo padrão do FireFox */
+                appearance: none; /* Remove estilo padrão do FireFox*/
+                text-indent: 0.01px; /* Remove seta padrão do FireFox */
+                text-overflow: "";  /* Remove seta padrão do FireFox */     
+                select::-ms-expand {display: none;} /* Remove seta padrão do IE*/
+            }
+            .btn-default{
+                float: right;
+                //media query
+                @include d(s){
+                    float: none;
+                }
+                //media query
+            }
+            textarea{
+                @include input-gray;
+                color: $orange;  
+                @include placeholder-orange;     
+                max-height: 160px;
+            }
+            
+        }
+    }
+}

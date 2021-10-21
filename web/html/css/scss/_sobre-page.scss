@@ -1,0 +1,161 @@
+.sobre-page{
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+
+.texto-sobre{
+    
+    h1{
+        color:$violet1;
+        @include type-3(32);
+
+        //media query
+        @include d(m){
+            @include type-3(24);
+        }
+        //media query
+        strong{
+            @include type-4(20);
+        }
+        &::after{
+            @include lineViolet2;
+            background: $yellow;
+        }
+    }
+    p{
+        @include d(l){
+            @include type-2(16);
+            color: $violet1;
+            line-height: 1.50em;
+        }
+        @include d(m){
+            @include type-2(16);
+            color: $violet1;
+            line-height: 1.50em;
+        }
+        @include d(s){
+            @include type-2(16);
+            color: $violet1;
+            line-height: 1.20em;
+        }
+
+        //media query
+        @include d(s){
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        //media query        
+    }
+}
+
+.imagem-sobre{
+    margin-bottom: 50px;
+
+    img{
+        border: 6px solid $violet1; 
+        margin: 0 auto;
+        width: 300px;
+        height: 300px; 
+        -moz-border-radius: 50%; 
+        -webkit-border-radius: 50%; 
+        border-radius: 50%;
+        @include transition-3;
+        &:hover{
+           border: 6px solid $violet2;  
+            @include transition-3;
+        }
+    }
+}
+
+.titulo-img{
+    display: inline-block;
+    text-align: center;
+    
+    h1{ 
+        color:$white;
+        position: relative;
+        @include type-3(32);
+
+        //media query
+        @include d(m){
+            @include type-3(24);
+        }
+        //media query
+        strong{
+            @include type-4(20);
+        }    
+    }
+    img{
+    position: absolute;
+    display: inline-block;
+        left: 410px;
+        top: -20px;
+        
+        @include d(m){
+            left: 240px;
+            top: -20px;
+            width: 300px;
+        }
+        @include d(s){
+            left: 50px;
+            top: -20px;
+//            width: 300px;           
+        }
+    }
+}
+
+.sobre-valores{
+    margin-top: 100px; 
+    
+    .bg-sobre{
+        margin-top: 70px;
+        
+        @include d(s){
+            margin-top: 0;
+        }
+        
+        img{
+            @include d(m){
+                bottom: 0;
+                position: absolute;
+
+            }        
+            @include d(s){
+                display: none;
+            }
+        }
+    }
+    .valores-item{
+        margin-bottom: 60px;
+        
+        @include d(s){
+            margin-bottom: 20px;
+        }
+        img{
+            display: inline;
+            vertical-align: middle;
+        }
+        h3{
+            padding-left: 20px;
+            display: inline;
+            vertical-align: middle;
+            @include type-3(32);
+            color: $violet1;
+            
+        }
+        p{
+            padding-left: 60px;
+            @include type-3(16);
+            color: $violet1;
+            line-height: 1.70em;
+        }
+        li{ 
+            margin-left: 60px;
+            @include type-3(16);
+            color: $violet1;
+            list-style: square;
+            line-height: 1.70em;
+        }
+    }
+}

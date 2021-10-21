@@ -1,0 +1,247 @@
+.estrelinha-page{
+    margin-top: 150px;
+    margin-bottom: 80px;
+     
+    @include d(m){
+        margin-top: 120px;
+        margin-bottom: 20px;
+    }
+    @include d(s){
+        margin-top: 110px;
+    }
+    
+    .estrelinha-img{
+        @include d(m){display:none;}
+        @include d(s){display:none;}
+    }
+    .estrelinha-qualidade{
+        @include d(s){display: none;}
+    
+            .estrelinha-item{
+                margin-bottom: 15px;
+            }
+
+            img{
+                display: inline-block;
+                vertical-align: middle;
+                @include transition-1;
+                &:hover{
+                    @include opacity-1;
+                }
+            }
+            h2{
+                display: inline-block;
+                vertical-align: middle;
+                @include type-7(36);
+                color: $brown;
+                padding-left: 10px;
+            }         
+    }
+    
+    .estrelinha-sobre{
+        //media query
+        @include d(s){
+            text-align: center;
+        }
+        //media query
+        h1{
+            color:$violet1;
+            @include type-3(32);
+
+            //media query
+            @include d(m){
+                @include type-3(24);
+            }
+            //media query
+            strong{
+                @include type-4(20);
+            }
+            &::after{
+                @include lineViolet2;
+                background: $yellow;
+                //media query
+                @include d(s){
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                //media query
+            }            
+        }
+        p{
+            @include type-3(16);
+            color: $violet1;
+            line-height: 1.50em;
+            strong{
+                @include type-4(16);
+                color: $violet1;
+                line-height: 1.50em;                
+            }
+        }
+    }
+    
+}
+.estrelinha-faq{
+  margin-top: 100px;
+  // margin-bottom: 80px;
+    height: 384px;
+    background: url("img/estrelinha-faq-bg.jpg") no-repeat center center;
+    
+    .logista-faq-content{
+        margin: 84px 0;
+        h1{
+            color:$white;
+            @include type-3(32);
+            text-transform: uppercase;
+
+            //media query
+            @include d(m){
+                @include type-3(24);
+            }
+            //media query
+            strong{
+                @include type-4(16);
+            }
+            &::after{
+                @include lineViolet2;
+                background: $violet2;
+            }            
+        }
+        p{
+            @include type-3(16);
+            color: $violet1;
+            line-height: 1.50em;
+            strong{
+                @include type-4(16);
+                color: $white;
+                line-height: 1.50em;                
+            }
+        }        
+    }
+}
+
+.logista-cadastro-titulo{
+        margin: 30px 0;
+        h1{
+            color:$violet1;
+            @include type-3(32); 
+
+            //media query
+            @include d(m){
+                @include type-3(24);
+            }
+            //media query
+            strong{
+                @include type-4(16);
+            }
+            &::after{
+                @include lineViolet2;
+                background: $yellow;
+            }            
+        }    
+}
+
+.estrelinha-cadastro-form{
+
+    form{
+        margin-bottom: 50px;
+        height: 400px;
+        .logista-ident{
+            margin-bottom: 20px;
+
+        }        
+        .estrelinha-check{
+            h4{
+                display: inline;
+                @include type-3(16);
+                color: $violet1; 
+                strong{ 
+                    @include type-1(16);
+                } 
+            }
+            p{
+                display: inline;
+            }
+            span{
+                display: inline;
+                @include type-3(16);
+                color: $violet1; 
+                strong{ 
+                    @include type-1(16);
+                } 
+            }            
+            input[type=checkbox]{
+                display: inline;
+                @include type-3(16); 
+                span{
+                   color: $violet1; 
+                }
+            }            
+        }
+        
+        h4{
+            @include type-3(16);
+            color: $violet1; 
+            strong{ 
+                @include type-1(16);
+            } 
+        }
+        span{
+          @include type-3(16);
+          color: $pink; 
+        }
+        input[type=submit]{
+            margin: 15px 0;
+            @include gradientButton1;
+            @include pinkButton;
+            @include rot135;
+        }
+        input[type=button]{
+          margin: 15px 0;
+          @include gradientButton1;
+          @include pinkButton;
+          @include rot135;
+        }
+        input[type=text]{
+            color: $orange; 
+            @include input-gray;
+            @include placeholder-orange;
+        }
+        
+        input[type=tel]{
+            color: $orange; 
+            @include input-gray;
+            @include placeholder-orange;
+        }   
+        input[type=email]{
+            color: $orange; 
+            @include input-gray;
+            @include placeholder-orange;
+        }        
+        
+        //Select 
+        select::-ms-expand {
+        display: none;
+        }
+        select { 
+            //contact form - select
+            @include input-item;
+            @include input-gray;
+            color: $orange;            
+            background: url('img/btn-select.png') no-repeat $gray2;  /* Imagem de fundo (Seta) */
+            background-position: 250px center;  /*Posição da imagem do background*/
+            width: 290px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+            height:42px; /* altura do select, importante para que tenha a mesma altura em todo os navegadores */
+            -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+            -moz-appearance: none; /* Remove estilo padrão do FireFox */
+            appearance: none; /* Remove estilo padrão do FireFox*/
+            text-indent: 0.01px; /* Remove seta padrão do FireFox */
+            text-overflow: "";  /* Remove seta padrão do FireFox */     
+            select::-ms-expand {display: none;} /* Remove seta padrão do IE*/
+        }
+        .btn-default{
+            float: right;
+            
+        }
+    }
+}

@@ -1,0 +1,295 @@
+// Color Default
+$black:		#000000;
+$white:		#ffffff;
+$violet1:   #4c5993;
+$violet2:   #8ea0ff; 
+$violet3:   #8499ff; 
+$yellow:    #eba035;
+$orange:    #e8896f;
+$gray:      #cccccc;
+$gray2:     #eeeeee;
+$blue:      #0f92c2;
+$blue2:     #1057a3;
+$blue3:     #5f94bb;
+$pink:      #ff3a5f;
+$red:       #e6574f;
+$brown:     #70312f;
+// Color Brand
+
+
+// Font Family
+$font1: 'nexa-bold-webfont';
+$font2: 'nexa-light-webfont';
+$font3: 'CenturyGothic';
+$font4: 'centuryGothicBold';
+
+
+// Font Mixin
+@function em($pixel, $contexto: 16){
+    @return $pixel / $contexto + em;
+}
+
+@mixin type-1($size) {
+    font-family: $font1;
+    @if $size == 10 {
+		font-size: em(10);
+		line-height: em(30, 10);
+	}
+	@else if $size == 12 {
+        font-size: em(12);
+        line-height: em(30, 12);
+    }
+	@else if $size == 14 {
+		font-size: em(14);
+		line-height: em(30, 14);
+	}
+	@else if $size == 15 {
+		font-size: em(15);
+		line-height: em(30, 15);
+	}
+	@else if $size == 16 {
+		font-size: em(16);
+		line-height: em(30, 12);
+	}
+	@else if $size == 17{
+		font-size: em(17);
+		line-height: em(30, 17);
+	}    
+	@else if $size == 18{
+		font-size: em(18);
+		line-height: em(30, 18);
+	}
+	@else if $size == 20 {
+		font-size: em(20);
+		line-height: em(30, 20);
+	}
+    @else if $size == 24 {
+        font-size: em(24);
+        line-height: em(30, 24);
+    }
+	@else if $size == 28 {
+		font-size: em(28);
+		line-height: em(30, 28);
+	}
+	@else if $size == 32 {
+		font-size: em(32);
+		line-height: em(30,32);
+	}
+	@else if $size == 36 {
+		font-size: em(36);
+		line-height: em(30,36);
+	}
+	@else if $size == 40 {
+		font-size: em(40);
+		line-height: em(30,40);
+	}
+	@else if $size == 44 {
+		font-size: em(44);
+		line-height: em(30,44);
+	}
+	@else if $size == 55 {
+		font-size: em(55);
+		line-height: em(30,55);
+	}
+}
+
+@mixin type-2($size){
+    font-family: $font2;
+    @if $size == 10 {
+		font-size: em(10);
+		line-height: em(30, 10);
+	}
+	@else if $size == 12 {
+        font-size: em(12);
+        line-height: em(30, 12);
+    }
+	@else if $size == 14 {
+		font-size: em(14);
+		line-height: em(30, 14);
+	}
+	@else if $size == 16 {
+		font-size: em(16);
+		line-height: em(30, 12);
+	}
+	@else if $size == 17{
+		font-size: em(17);
+		line-height: em(30, 17);
+	}     
+	@else if $size == 18{
+		font-size: em(18);
+		line-height: em(30, 18);
+	}
+	@else if $size == 20 {
+		font-size: em(20);
+		line-height: em(30, 20);
+	}
+    @else if $size == 24 {
+        font-size: em(24);
+        line-height: em(30, 24);
+    }
+	@else if $size == 28 {
+		font-size: em(28);
+		line-height: em(30, 28);
+	}
+	@else if $size == 32 {
+		font-size: em(32);
+		line-height: em(30, 32);
+	}
+	@else if $size == 36 {
+		font-size: em(36);
+		line-height: em(30,36);
+	}
+	@else if $size == 40 {
+		font-size: em(40);
+		line-height: em(30,40);
+	}
+	@else if $size == 44 {
+		font-size: em(44);
+		line-height: em(30,44);
+	}
+	@else if $size == 55 {
+		font-size: em(55);
+		line-height: em(30, 55);
+	}
+}
+
+@mixin type-3($size){
+    font-family: $font3;
+    @if $size == 10 {
+		font-size: em(10);
+		line-height: em(30, 10);
+	}
+	@else if $size == 12 {
+        font-size: em(12);
+        line-height: em(30, 12);
+    }
+	@else if $size == 14 {
+		font-size: em(14);
+		line-height: em(30, 14);
+	}
+	@else if $size == 16 {
+		font-size: em(16);
+		line-height: em(30, 12);
+	}
+	@else if $size == 18{
+		font-size: em(18);
+		line-height: em(30, 18);
+	}
+	@else if $size == 20 {
+		font-size: em(20);
+		line-height: em(30, 20);
+	}
+    @else if $size == 24 {
+        font-size: em(24);
+        line-height: em(30, 24);
+    }
+	@else if $size == 28 {
+		font-size: em(28);
+		line-height: em(30, 28);
+	}
+	@else if $size == 32 {
+		font-size: em(32);
+		line-height: em(30, 32);
+	}
+	@else if $size == 36 {
+		font-size: em(36);
+		line-height: em(30, 36);
+	}
+	@else if $size == 50 {
+		font-size: em(50);
+		line-height: em(30, 50);
+	}    
+	@else if $size == 90 {
+		font-size: em(90);
+		line-height: em(30, 90);
+	}  
+	@else if $size == 140 {
+		font-size: em(140);
+		line-height: em(30, 140);
+	}    
+}
+
+@mixin type-4($size){
+    font-family: $font4;
+    @if $size == 10 {
+		font-size: em(10);
+		line-height: em(30, 10);
+	}
+	@else if $size == 12 {
+        font-size: em(12);
+        line-height: em(30, 12);
+    }
+	@else if $size == 14 {
+		font-size: em(14);
+		line-height: em(30, 14);
+	}
+	@else if $size == 16 {
+		font-size: em(16);
+		line-height: em(30, 12);
+	}
+	@else if $size == 18{
+		font-size: em(18);
+		line-height: em(30, 18);
+	}
+	@else if $size == 20 {
+		font-size: em(20);
+		line-height: em(30, 20);
+	}
+    @else if $size == 24 {
+        font-size: em(24);
+        line-height: em(30, 24);
+    }
+	@else if $size == 28 {
+		font-size: em(28);
+		line-height: em(30, 28);
+	}
+	@else if $size == 32 {
+		font-size: em(32);
+		line-height: em(30, 32);
+	}
+	@else if $size == 36 {
+		font-size: em(36);
+		line-height: em(30, 36);
+	}
+	@else if $size == 50 {
+		font-size: em(50);
+		line-height: em(30, 50);
+	}    
+	@else if $size == 90 {
+		font-size: em(90);
+		line-height: em(30, 90);
+	}  
+	@else if $size == 140 {
+		font-size: em(140);
+		line-height: em(30, 140);
+	}    
+}
+
+
+@mixin transition-1{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+@mixin transition-2{
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+@mixin transition-3{
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+ 
+@mixin opacity-1{
+	-webkit-opacity: 0.7;
+	-moz-opacity: 0.7;
+	-o-opacity: 0.7;
+	 opacity: 0.7;
+} 

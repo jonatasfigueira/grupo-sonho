@@ -1,0 +1,211 @@
+.job-page{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    
+    .job-texto{
+        margin-bottom: 50px;
+        
+        @include d(s){
+            text-align: center;
+        }
+        
+        h1{
+            color:$violet1;
+            @include type-3(32);
+            text-align: center;
+
+            //media query
+            @include d(m){
+                @include type-3(24);
+            }
+            //media query
+            strong{
+                @include type-4(20);
+            }
+            &::after{
+                @include lineViolet2;
+                background: $yellow;
+                margin: 0 auto;
+                margin-bottom: 40px;
+            }            
+        }
+        p{
+            text-align:justify;
+            @include type-3(16);
+            color: $violet1;
+            line-height: 1.50em;
+            width: 800px;
+            margin: 0 auto;
+            strong{
+                @include type-4(16);
+                color: $violet1;
+                line-height: 1.50em;                
+            }
+        }
+    }
+    
+    .job-item{
+        img{ 
+            display: inline-block;
+            vertical-align: middle;
+            
+            @include d(m){
+                
+            }
+        }
+        h2{
+            @include type-4(24);
+            color: $violet1;
+            display: inline-block;
+            vertical-align: middle;
+            padding-left: 15px;
+            margin-top: -30px;
+            
+            @include d(m){ 
+                padding-left: 0px;
+            }
+        }
+        p{
+            @include type-3(14); 
+            color: $blue3;
+            display: inline-block;
+            vertical-align: middle; 
+            padding-left: 80px;
+            margin-top: -50px;
+            line-height: 1.10em;
+            
+            @include d(m){
+                 padding-left: 70px;
+            }
+        }
+    }
+} 
+.job-content{
+    background: url("img/job-form-bg1.jpg") no-repeat center center;
+    padding: 50px 0;
+    
+    //media query
+    @include d(l){
+        height: 850px;
+    }
+    @include d(s){
+        padding: 0;
+    }
+    //media query
+    .job-cadastro-titulo{
+//        margin-bottom: 50px;
+        @include d(s){
+            text-align: center;
+        }
+        h1{
+            color:$white;
+            @include type-3(32); 
+
+            //media query
+            @include d(m){
+                @include type-3(24);
+            }
+            //media query
+            strong{
+                @include type-4(16);
+            }
+            &::after{
+                @include lineViolet2;
+                background: $violet2;
+                 //media query
+                @include d(s){
+                    margin: 0 auto; 
+                }   
+                 //media query                    
+            }            
+        }     
+    }
+    .job-cadastro-form{
+        form{
+            margin-bottom: 50px;
+            min-height: 400px;
+            .logista-ident{
+                margin-bottom: 20px;
+            }        
+             h4{
+                @include type-3(16);
+                color: $white; 
+                strong{ 
+                    @include type-1(16);
+                } 
+            }
+            input[type=submit]{
+                margin: 15px 0;
+                @include gradientButton1;
+                @include pinkButton;
+                @include rot135;
+            }
+            input[type=text]{
+                @include input-gray;
+                @include placeholder-orange;
+            }
+            
+            input[type=tel]{
+                @include input-gray;
+                @include placeholder-orange;
+            }   
+            input[type=email]{
+                @include input-gray;
+                @include placeholder-orange;
+            }
+
+            //Select 
+            select::-ms-expand {
+            display: none;
+            }
+            select {
+                @include input-item;
+                @include input-gray;
+                color: $orange;            
+                background: url('img/btn-select.png') no-repeat $gray2;  /* Imagem de fundo (Seta) */
+                background-position: 250px center;  /*Posição da imagem do background*/
+                width: 290px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+                height:42px; /* altura do select, importante para que tenha a mesma altura em todo os navegadores */
+                -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+                -moz-appearance: none; /* Remove estilo padrão do FireFox */
+                appearance: none; /* Remove estilo padrão do FireFox*/
+                text-indent: 0.01px; /* Remove seta padrão do FireFox */
+                text-overflow: "";  /* Remove seta padrão do FireFox */     
+                select::-ms-expand {display: none;} /* Remove seta padrão do IE*/
+            }
+            .btn-default{
+                float: right;
+            }
+            textarea{
+                @include input-gray;
+                color: $orange;  
+                @include placeholder-orange;            
+                max-height: 140px; 
+                margin-top: 20px;
+   
+            }
+       
+        }
+    }
+    
+}
+.job-parceiros{
+    margin: 50px 0;
+    h1{
+        color:$violet1;
+        @include type-3(32); 
+
+        //media query
+        @include d(m){
+            @include type-3(24);
+        }
+        //media query
+        strong{
+            @include type-4(16);
+        }
+        &::after{
+            @include lineViolet2;
+            background: $yellow;
+        }            
+    }     
+}

@@ -1,0 +1,50 @@
+/*!
+Theme Name: Sonho de Nenê
+Theme URI: www.sonhodenene.com.br
+Author: Jonatas Figueira
+Author URI: http://difigueira.com/
+Description: Criado para empresa do tema.
+Version: 1.0
+*/
+
+// Reset & Grid
+@import 'reset';
+@import 'grid';
+
+// Fonts
+@import 'fonts';
+
+// Variables &Mixins
+@import 'variables-mixins';
+
+// Global
+@import 'global';
+
+// Modules
+@import 'noticias-carousel';
+@import 'animation';
+@import 'form-file';
+
+// Pages
+@import 'nav-sonho'; 
+@import 'slide-home'; 
+@import 'main'; 
+@import 'colecao-sonho'; 
+@import 'contato-sonho'; 
+@import 'noticia-sonho'; 
+@import 'footer-sonho'; 
+@import 'nav-sec'; 
+@import 'paralax-pages'; 
+@import 'contato-mapa'; 
+
+// Subpages
+@import 'sobre-page';
+@import 'lojista-page';
+@import 'representante-page';
+@import 'trabalhe-conosco-page';
+@import 'contato-page';
+@import 'colecao-page';
+@import 'faq-page';
+@import 'estrelinha-page';
+
+

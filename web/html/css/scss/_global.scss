@@ -1,0 +1,169 @@
+body{
+    background: $white;
+    color: $black;
+}
+
+a {
+    color: blue;
+	text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%; //deixa qualquer imagem responsiva
+}
+//ocultar o reCaptcha v3 de todas as páginas
+.grecaptcha-badge {
+    opacity:0 !important;
+}
+
+.btn-slide{
+    //op 1
+    position: absolute;
+    margin-top: -13%;
+    margin-left: 67%;
+    //op 2
+    // margin-top: -20%;
+    // margin-left: 45%;
+    // vertical-align: middle;
+    //op 3
+    // margin-top: -20%;
+    // margin-left: 45%;
+    // float: left;
+    a{
+        margin: 15px 0;
+        @include gradientButton1;
+        @include pinkButton;
+        @include rot135;
+    }    
+
+    @include d(m){display: none;}
+}
+.btn-default{ 
+    a{
+        margin: 15px 0;
+        @include gradientButton1;
+        @include pinkButton;
+        @include rot135;
+
+    }
+    input[type=submit]{
+        margin: 15px 0;
+        @include gradientButton1;
+        @include pinkButton;
+        @include rot135;
+    }    
+    //media query
+    @include d(s){ 
+    }
+    //media query    
+}
+.btn-sec{ 
+    display: inline-block;
+    a{
+        background: $pink2; 
+        color: $white; 
+        @include type-1(16);
+        padding: 6px 20px;
+        @include borda1;
+    }
+}
+.btn-off{ 
+    background: $gray4;
+    color: $gray; 
+    border: none;
+    text-transform: uppercase;
+    @include type-1(16);
+    padding: 0px 20px; 
+    @include borda1;
+    display: inline-block;
+    line-height: 2em;
+}
+.subtitle1 {
+	@include type-1(17); 
+	color: $white; 
+	text-align: center;
+	padding-bottom: 50px; 
+ 
+	&:after {
+		@include titleLine;
+		background: $white;
+		margin: 0 auto;
+        margin-top: 40px;
+	}
+} 
+
+.subtitle2 {
+	@include type-1(17); 
+	color: $white; 
+	text-align: center;
+	padding-bottom: 50px; 
+ 
+	&:after {
+		@include titleLine;
+//		background: $gray1;
+		margin: 0 auto;
+        margin-top: 40px;
+	}
+} 
+//botão fechar modal
+#btn-close-modal {
+	position: relative;
+	text-align:right;
+	margin-top:40px;
+    
+    img{
+        float: right;
+    }
+}
+.closebt {
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	cursor:pointer;
+}
+.closebt:hover {
+	transform:rotate(90deg);
+}
+
+// contact form
+
+//campos obrigatórios
+span.wpcf7-not-valid-tip{
+    color: $violet1;
+    @include type-2(10);
+}
+div.wpcf7-response-output{
+    margin: -9em 0 !important;
+    text-align: center;
+}
+//tool tip
+.use-floating-validation-tip span.wpcf7-not-valid-tip{
+    color: $violet1;
+    @include type-2(10);
+    border: 1px solid $violet1 !important;
+    top: -50% !important;
+    left: 30% !important;
+}
+//mensagem erro - campos obrigatórios
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
+    border: 1px solid $violet1 !important;
+    @include type-2(15);
+    color: $violet1;
+}
+
+//mensagem sucesso
+div.wpcf7-mail-sent-ok{
+    border: 1px solid $green !important;
+    @include type-2(15);
+    color: $green;
+}
+
+//multiplo file
+.mfcf7-zl-multifile-name{
+    @include type-3(16);
+    color: $violet1;
+    }
+  

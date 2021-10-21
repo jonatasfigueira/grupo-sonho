@@ -1,0 +1,395 @@
+
+    .footer-animation{
+        // z-index: 1;
+        @include d(m){
+            display: none;
+        }
+        @include d(s){
+            display: none;
+        }
+        #footerAnima01 {
+            background-position: -3px -4px;
+            width: 58px;
+            height: 148px;
+            left: 50; 
+            -webkit-animation: slide-bottom 2s linear infinite  ;
+                    animation: slide-bottom 2s linear infinite  ;
+        } 
+        #footerAnima02 {
+            background-position: -58px -3px;
+            width: 60px;
+            height: 73px;
+            left: 194px; 
+            -webkit-animation: slide-bottom 2s linear infinite  ;
+                    animation: slide-bottom 2s linear infinite  ;
+        } 
+        #footerAnima03 {
+            background-position: -121px -0px;
+            width: 90px;
+            height: 128px;
+            left:407px; 
+            -webkit-animation: slide-bottom 2s linear infinite  ;
+                    animation: slide-bottom 2s linear infinite  ;
+        } 
+        #footerAnima04 {
+            background-position: -230px -0px;
+            width: 70px;
+            height: 83px;
+            left:598px; 
+            -webkit-animation: slide-bottom 2s linear infinite  ;
+                    animation: slide-bottom 2s linear infinite  ;
+        } 
+        #footerAnima05 {
+            background-position: -301px -0px;
+            width: 81px;
+            height: 118px;
+            left:768px; 
+            -webkit-animation: slide-bottom 2s linear infinite  ;
+                    animation: slide-bottom 2s linear infinite  ;
+        } 
+        #footerAnima06 {
+            background-position: -390px -0px;
+            width: 70px;
+            height: 119px;
+            left:968px; 
+            -webkit-animation: slide-bottom 2s linear infinite  ;
+                    animation: slide-bottom 2s linear infinite  ;
+        } 
+        #footerAnima07 {
+            background-position: -464px -0px;
+            width: 83px;
+            height: 94px;
+            left:1146px; 
+            -webkit-animation: slide-bottom 2s linear infinite  ;
+                    animation: slide-bottom 2s linear infinite  ;
+        }                         
+        .footerAnima {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            // background-image: url("img/mar-sprite-001.png?v=2");
+            background-image: url("img/sonho-sprite-01.png");
+            background-repeat: no-repeat;
+            background-color: transparent;
+        }
+        
+    }
+    footer{
+    // background: url("img/bg-footer.png") no-repeat;
+    // background-repeat: no-repeat; 
+    background: $blue2;
+    //media query 
+    @include d(s){
+        background: $blue2;
+    }
+    //media query
+    }
+
+
+.tag-footer{
+    padding: 80px 0 10px 0;
+    
+    //media query
+    @include d(m){
+        padding: 20px 0; 
+    }
+    @include d(s){
+        padding: 20px 0;
+        text-align: center;
+    }
+    //media query
+    .footer-content{
+        h1{
+            color:$white;
+            &:nth-child(2){
+                padding-top: 20px;
+            }
+            @include type-4(20);
+            strong{
+                @include type-4(20);
+            }
+            &::after{
+                @include lineYellow;
+                background: $yellow;
+
+                //media query
+                @include d(s){
+                    margin: 0 auto;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                //media query
+            }
+        }        
+        a{
+            @include type-3(14);
+            color: $white;
+            display: block;
+            padding: 0 3px 0 3px; 
+            @include transition-1;
+            &:hover{
+                @include transition-1;
+                @include type-4(14);
+            }
+        }
+        h4{
+            @include type-1(12);
+            color: $white;
+            text-transform: uppercase;
+            vertical-align: middle;
+            padding-bottom: 20px;
+            i{
+                padding: 0 3px 0;
+                font-size: 0.25em;
+                vertical-align: middle;
+            }
+        }
+        h5{
+            @include type-3(14);
+            color: $white;
+            // padding-bottom: 20px;
+            text-transform: uppercase;
+            &:nth-child(3){
+                padding-bottom: 20px;
+            }
+        }
+        span{
+            @include type-3(14);
+            color: $white;
+            display: block;
+            text-transform: none;
+            line-height: 0.75em;
+        }
+        p{
+            @include type-3(14);
+            color: $white;
+            line-height: 1.65em;
+        }
+        .redes-footer{
+            h1{
+                padding-top: 20px;
+            }
+            li{
+                display: inline-block;     
+                a{
+                    display: block;
+                    padding: 0 3px 0 3px; 
+                    
+                    img{
+                        
+                        @include transition-1;
+                        &:hover{
+                            @include opacity-1;
+                            @include transition-1;
+                        }                
+                    }
+    
+                }
+            } 
+        }
+        /*media query*/
+        @include d(m) {
+            padding-top: 100px;
+        }
+        /*media query*/
+
+        .btn-contato{
+            a{
+                color: $white;
+                @include gradientButton2;
+                @include pinkButton;
+                @include rot135;
+                margin: 20px 0 20px 0;
+            } 
+            input[type="submit"]{
+                color: $white;
+                @include gradientButton2;
+                @include pinkButton;
+                @include rot135;
+                margin: 20px 0 20px 0;
+            }
+        }
+    }
+    .footer-img{
+        @include d(l){
+            padding-top: 10px;
+        }
+         
+        .footer-l{
+            @include d(m) {
+               padding-top: 110px;
+            }
+            @include d(s) {
+                display: none; 
+            }            
+        }
+        .footer-m-s{
+            @include d(l){
+                display: none;
+            }
+            @include d(m){
+                display: none;
+            }
+            @include d(s){
+                margin: 0 auto;
+            }
+        } 
+    }
+}
+
+.news-content{
+    // padding-top: 350px; 
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    
+    //media query
+    @include d(m){
+        padding-top: 0px;
+    }
+    @include d(s){
+        padding-top: 30px;
+    }
+    //media query
+    h2{
+        @include type-3(14);
+        color: $white;
+        text-align: center;
+    }
+    .news-form{
+        margin: 0 auto;     
+        text-align: center;
+        .btn-news{
+            margin: 0 -20px;
+            @include gradientButton3;
+            @include pinkButton;
+            @include rot135;
+            
+            //media query
+            @include d(s){
+                margin: 0 -5px;
+            }
+            //media query
+            
+        }        
+    }
+    /*Don't forget to add Font Awesome CSS : "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"*/
+    input[type="email"] {
+        @include type-3(14);
+        width: 450px; 
+        border: none;
+        border-radius: 4px;
+        margin: 8px 0;
+        outline: none;
+        padding: 8px;
+        box-sizing: border-box;
+        @include transition-1;
+        
+        //media query
+        @include d(s){
+            width: 200px;
+            margin: 0 auto;
+        }
+        //media query
+            
+        @include placeholder-gray;        
+    }
+
+    input[type="email"]:focus {
+        border-color: dodgerBlue;
+        box-shadow: 0 0 8px 0 dodgerBlue;
+    }
+
+    .inputWithIcon input[type="email"] {
+        padding-left: 30px;
+    }
+
+    .inputWithIcon {
+        position: relative; 
+    }
+
+    .inputWithIcon i {
+        position: absolute; 
+        top: 8px;
+        padding: 9px 8px;
+        color: #aaa;
+        transition: 0.3s;
+    }
+
+    .inputWithIcon input[type="email"]:focus + i {
+        color: dodgerBlue;
+    }
+
+    .inputWithIcon.inputIconBg i {
+        color: $white;
+    }
+
+    .inputWithIcon.inputIconBg input[type="email"]:focus + i {
+        color: #fff;
+        background-color: dodgerBlue;
+    }
+
+}
+
+.copyright{ 
+    
+    border-top: 1px solid $white;  
+    padding-top: 10px; 
+    
+    //media query
+    @include d(m){
+        padding-top: 10px;
+    }
+    @include d(s){
+        padding-top: 5px;
+    }
+    //media query
+    p{
+        @include type-3(14);
+        color: $white;
+        text-align: center;
+        //media query
+        @include d(s){
+            line-height: 0.75em;
+        }
+        //media query
+        strong{
+            @include type-4(16);
+        }
+        //media query
+        @include d(s){
+            text-align: center;
+        }
+        //media query
+    }        
+    // .menu-nav-social{ 
+    //     text-align: right;
+    //     //media query
+    //     @include d(m){
+    //         text-align: right;
+    //         padding-top: 5px;            
+    //     }  
+    //     @include d(s){
+    //         text-align: center;
+    //         padding-top: 10px;            
+    //     }        
+    //     //media query
+    //     li{
+    //         display: inline-block;     
+    //         a{
+    //             display: block;
+    //             padding: 0 3px 0 3px; 
+                
+    //             img{
+                    
+    //                 @include transition-1;
+    //                 &:hover{
+    //                     @include opacity-1;
+    //                     @include transition-1;
+    //                 }                
+    //             }
+
+    //         }
+    //     }      
+    // }
+}

@@ -1,0 +1,140 @@
+ <!DOCTYPE html>
+<html class="int" lang="pt-BR">
+<head>
+    <title>Sonho de Nenê</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Jonatas Figueira"/>
+    <meta name="description" content="Sonho de Nenê">
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="css/style-colecao.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+</head>
+    
+<body class="corpo">
+    <header >
+        <div class="container">
+            <div class="grid-4 menu-logo">
+               <a class="brand-l" href="index.html"><img src="img/brand-colecao.png" alt="Sonho de Nenê"></a>
+               <a class="brand-m" href="index.html"><img src="img/brand-m.png" alt="Sonho de Nenê"></a>
+               <a class="brand-s" href="index.html"><img src="img/brand-s.png" alt="Sonho de Nenê"></a>
+            </div>
+            
+            <nav class="grid-8">
+                <!-- menu hamburguer -->
+                <span class="mobile-btn"></span>
+                <ul class="menu-mobile">
+                    <li>
+                        <a href="#">Empresa</a>
+                        <ul>
+                            <li><a href="empresa.html">- Sobre nós</a></li>
+                            <li><a href="trabalhe_conosco.html">- Trabalhe conosco</a></li>
+                            <li><a href="representante.html">- Representantes</a></li>
+                        </ul>                        
+                    </li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Coleção</a></li>
+                    <li><a href="lojista.html">Logista</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul> 
+                <!-- fim menu hamburguer -->
+                <ul class="menu-nav">
+                    <li>
+                        <a href="#">Empresa</a>
+                        <ul>
+                            <li><a href="empresa.html">- Sobre nós</a></li>
+                            <li><a href="trabalhe_conosco.html">- Trabalhe conosco</a></li>
+                            <li><a href="representante.html">- Representantes</a></li>
+                        </ul>                        
+                    </li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Coleção</a></li>
+                    <li><a href="lojista.html">Logista</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>       
+	<!-- Site Header -->
+	<div id="topo">
+<!--
+		<h1 id="sitename">
+			<img src="img/brand-colecao.png" alt="">
+		</h1>
+-->
+		<h4 id="tagline">COLEÇÃO DOCE VERÃO - 2019</h4>
+	</div>
+	<div id="maincolecao">
+		<!-- Site Footer -->
+		<div id="socialmidia">
+			<div id="soc_links">
+				<ul>
+					<li class="soc_icon_link"><a href="https://facebook.com/sonhodenene"><i class="fa fa-facebook"></i></a></li>
+					<li class="soc_icon_link"><a href="https://instagram.com.br/sonhodenene"><i class="fa fa-instagram fa-2x"></i></a></li>
+					<li class="soc_icon_link"><a href="#"><i class="icon-gplus-1"></i></a></li>
+					<li class="soc_icon_link"><a href="https://www.youtube.com/channel/UC9m3fEfSajEucZ_PRfEPX5g"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>	
+	</div>	
+		
+    <div id="bg_slideshow">
+        <ul id="bg_slides" class="slides">
+            <li style="background-image: url(img/verao19-1.jpg)"></li>
+            <li style="background-image: url(img/verao19-2.jpg);"></li>
+            <li style="background-image: url(img/verao19-3.jpg);"></li> 
+            <li style="background-image: url(img/verao19-4.jpg);"></li> 
+        </ul>
+
+    </div>
+    
+    <div id="bg_slides_controls">
+		<a href="#" id="bg_slides_prev" class="bg_slides_nav"></a>
+		<span class="slider_pages"></span>
+		<span class="slider_pages"></span>
+		<span class="slider_pages"></span>
+		<span class="slider_pages"></span>
+		<!--<span class="slider_pages"></span> -->
+		<a href="#"  id="bg_slides_next" class="bg_slides_nav"></a>
+	</div>  
+	<script src="js/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.0/jquery.flexslider-min.js"></script>        
+<!--    <scritp src="js/main.js"></scritp>-->
+    <script>
+        jQuery(document).ready(function(){
+
+            /* Flex Slider */
+            if( $('#bg_slideshow').length > 0 ) {
+
+                var slider = $('#bg_slideshow').flexslider({
+                    controlNav: true,
+                    directionNav: false,
+                    manualControls:  jQuery('#bg_slides_controls').length > 0 ? '#bg_slides_controls .slider_pages' : false,
+                    animationSpeed: 1200,
+                    start: function(slider) {
+
+                    }
+                });
+
+                jQuery('.bg_slides_nav').click(function(){
+                    if( jQuery(this).attr('id') == 'bg_slides_next' ) {
+                        slider.flexslider('next');
+                    } else {
+                        slider.flexslider('prev');
+                    }
+                });
+
+            }
+
+        });
+        //menu hamburguer
+        $('.mobile-btn').click(function(){
+          $(this).toggleClass('active')
+          $('.menu-mobile').toggleClass('active')
+        });
+
+    </script>      
+    
+</body>
+</html>

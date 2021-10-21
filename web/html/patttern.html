@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="grid-12">
+    <h4>Este site é protegido por reCAPTCHA e aplicam-se a <a href="https://policies.google.com/privacy">Política de Privacidade</a> do Google e os <a href="https://policies.google.com/terms">Termos de Serviço</a>.</h4>
+  </div>
+
+  <div>
+    <div class="grid-6 form-margin"> 
+        <div class="row">
+            <div class="grid-12 representante-check">
+            <h4>Já representa alguma marca?</h4>
+            [checkbox* checkbox-representante exclusive  "Sim" "Não"]
+            </div>
+        </div>
+    
+        <div class="row">
+            <h4>Dados pessoais:</h4>
+            <div class="grid-6">
+                <label>
+                    [text* nome placeholder "Nome"]
+                </label>     
+            </div>
+    
+            <div class="grid-6">
+                <label>
+                    [text* sobrenome placeholder "Sobrenome"]
+                </label>     
+            </div> 
+        </div>
+    
+        <div class="row"> 
+            <div class="grid-6">
+                <label>
+                    [text* cnpj class:cnpj placeholder "CNPJ"]
+                </label>     
+            </div>
+            <div class="grid-6">
+                <label id="numero-label">
+                    [tel* telefone class:telefone placeholder "Telefone"]
+                </label>     
+            </div> 
+        </div>
+    
+        <div class="row"> 
+            <div class="grid-6">
+                <label>
+                    [email* email placeholder "E-mail"]
+                </label>     
+            </div> 
+        </div>                         
+    </div>
+        
+    <div class="grid-6 form-margin"> 
+        <div class="row">
+            <h4>Endereço:</h4>
+            <div class="grid-6 input-item">
+            <label>
+                [text* endereco placeholder "Endereço"]
+            </label>     
+            </div>
+            <div class="grid-6">
+            <label>
+                [text* bairro placeholder "Bairro"]
+            </label>     
+            </div> 
+        </div>
+    
+        <div class="row">
+            <div class="grid-6">
+            <label>
+                [text* complemento placeholder "Complemento"]
+            </label>     
+            </div>
+            <div class="grid-6">
+            <label>
+                [text* cep class:cep placeholder "CEP"]
+            </label>     
+            </div> 
+        </div>
+    
+        <div class="row">
+            <div class="grid-6">
+                <label>
+                [select* estado id:estados-representante include_blank]
+                </label>       
+            </div>
+            <div class="grid-6">
+                <label>
+                [select* cidade id:cidades-representante include_blank]
+                </label>     
+            </div> 
+        </div>  
+        <div class="row">
+            <div class="grid-12">
+            [textarea* mensagem]
+            </div>
+        </div>
+        <div class="row"> 
+            <div class="grid-12 lojista-btn">
+            [file* anexo-curriculo limit:2mb filetypes:pdf|doc|docx id:btn-anexo]
+            [submit class:btn-default "Enviar"]
+            </div>
+        </div>
+    </div>
+
+  </div>
+
+  
+
+
+
+  <div>
+      <div class="row">
+          <div class="grid-12 representante-check">
+          <h4>Já representa alguma marca?</h4>
+          [checkbox checkbox-representante exclusive  "Sim" "Não"]
+          </div>
+      </div>
+  <div class="grid-6"> 
+      <div class="row">
+          <h4>Dados pessoais:</h4>
+          <div class="grid-6">
+              <label>
+                  [text* nome placeholder "*Nome"]
+              </label>     
+          </div>
+  
+          <div class="grid-6">
+              <label>
+                  [text* sobrenome placeholder "*Sobrenome"]
+              </label>     
+          </div> 
+      </div>
+  
+      <div class="row"> 
+          <div class="grid-6">
+              <label>
+                  [text* cnpj class:cnpj placeholder "*CNPJ"]
+              </label>     
+          </div>
+          <div class="grid-6">
+              <label id="numero-label">
+                  [tel* telefone class:telefone placeholder "*Telefone"]
+              </label>     
+          </div> 
+      </div>
+  
+      <div class="row"> 
+          <div class="grid-6">
+              <label>
+                  [email* email placeholder "*E-mail"]
+              </label>     
+          </div> 
+      </div>                         
+  </div>
+<!--form-margin-->
+  <div class="grid-6"> 
+      <div class="row">
+          <h4>Endereço:</h4>
+          <div class="grid-6 input-item">
+          <label>
+              [text* endereco placeholder "*Endereço"]
+          </label>     
+          </div>
+          <div class="grid-6">
+          <label>
+              [text* bairro placeholder "*Bairro"]
+          </label>     
+          </div> 
+      </div>
+  
+      <div class="row">
+          <div class="grid-6">
+          <label>
+              [text complemento placeholder "Complemento"]
+          </label>     
+          </div>
+          <div class="grid-6">
+          <label>
+              [text* cep class:cep placeholder "*CEP"]
+          </label>     
+          </div> 
+      </div>
+  
+      <div class="row">
+          <div class="grid-6">
+              <label>
+              [select* estado id:estados-representante include_blank]
+              </label>       
+          </div>
+          <div class="grid-6">
+              <label>
+              [select* cidade id:cidades-representante include_blank]
+              </label>     
+          </div> 
+      </div>  
+      <div class="row">
+          <div class="grid-12">
+          [textarea* mensagem]
+
+          </div>
+
+      </div>
+
+  </div>
+      <div class="row"> 
+          <div class="lojista-btn">            
+          [submit class:btn-default "Enviar"]
+          </div>
+      </div>
+</div>
+</body>
+</html>
